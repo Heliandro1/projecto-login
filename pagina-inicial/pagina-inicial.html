@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-query.css">
+</head>
+<body>
+    <header>
+        <p id="accountName"></p>
+        <button id="btnShow">
+            <img src="../imgs/menu_50px.png" alt="iconbtn" height="25px">
+        </button>
+    </header>
+    <div id="drop-down">
+        <nav>
+            <a href="#" id="userName"><img src="../imgs/email_26px.png" alt="emailicon"></a>
+            <a href="../editar-conta/editar.html"> <img src="../imgs/edit_24px.png" alt=""> Editar a sua conta</a>
+            <a href="../index.html" id="btnLogOut"> <img src="../imgs/exit_26px.png" alt="exiticon" height="20px"> Terminar sessão</a>
+        </nav>
+    </div>
+    <main>
+        <section id="dados">
+            <div id="imagem">             
+            </div>
+                <div id="userdata">
+                    <h1>A sua conta</h1>
+                    <p>Seja bem vindo(a) novamente. </p>
+                    <p id="name"></p>
+                    <p id="nick"></p>
+                    <p id="birthday"></p>
+                    <p id="age"></p>
+                    <p id="gender"></p>
+                </div>
+        </section>
+    </main>
+    <script src="../cadastro/script/controller.js"></script>
+    <script src="script/view.js"></script>
+</body>
+</html>

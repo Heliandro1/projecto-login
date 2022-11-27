@@ -4,22 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Faça o seu Login</title>
+    <link rel="stylesheet" href="tela-login/styles/style.css">
+    <link rel="stylesheet" href="tela-login/styles/media-query.css">
 </head>
 <body>
     <main>
+        <div id="modal">
+            <div id="erros">
+                <img alt="msgicon" id="imgicon" width="50px">
+                <p id="setError"></p>
+                <input type="button" value="OK" id="btnOK">
+            </div>
+        </div>
         <section id="login">
             <div id="imagem">             
             </div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta e fazer configurações do seu ambiente</p>
-                <form action="login.php" method="post">
-
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <img src="../imgs/person_64px.png" alt="usericon">
+                        <input type="text" name="username" id="txtUserName" placeholder="Username" autocomplete="username" required minlength="6">
+                    </div>
+                    <div class="campo">
+                        <img src="../imgs/key_24px.png" alt="passicon">
+                        <input type="password" name="password" id="txtPassword" placeholder="Password" autocomplete="current-password" required minlength="8">
+                    </div>
+                    <input type="submit" value="Login" id="btnLogin">
+                    <a href="cadastro/cadastro.html" rel="noopener" target="_self" class="btn">Não tem uma conta? Cadastre-se</a>
                 </form>
             </div>
         </section>
     </main>
+
+    <script src="tela-login/script/index.js"></script>
+    <script src="cadastro/script/controller.js"></script>
 </body>
 </html>

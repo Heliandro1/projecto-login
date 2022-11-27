@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar conta</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-query.css">
+</head>
+<body>
+    <main>
+        <div id="modal">
+            <div id="erros">
+                <img alt="msgicon" id="imgicon" width="50px">
+                <p id="setError"></p>
+                <input type="button" value="OK" id="btnOK">
+            </div>
+        </div>
+        <section id="cadastro">
+            <div id="imagem">             
+            </div>
+            <div id="formulario">
+                <h1>Editar Conta</h1>
+                <form action="#" method="post" autocomplete="on">
+                    <div class="campo">
+                        <input type="text" name="nomec" id="txtPNome" required placeholder="Primeiro nome">
+                    </div>
+                    <div class="campo">
+                        <input type="text" name="apelido" id="txtApelido" required placeholder="Seu Apelido">
+                    </div>
+                    <div class="campo">
+                        <img src="../imgs/person_64px.png" alt="usericon">
+                        <input type="text" name="username" id="txtUsername" placeholder="Username" autocomplete="username" required>
+                    </div>
+                    <div class="campo">
+                        <img src="../imgs/key_24px.png" alt="passicon">
+                        <input type="password" name="password" id="txtPassword" placeholder="Password" autocomplete="current-password" required>
+                    </div>
+                    <input type="submit" value="Salvar" id="btnSave">
+                    <a href="../pagina-inicial/pagina-inicial.html" rel="noopener" target="_self" class="btn">Cancelar</a>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="../cadastro/script/controller.js"></script>
+    <script src="../cadastro/script/model.js"></script>
+    <script src="script/view.js"></script>
+</body>
+</html>
