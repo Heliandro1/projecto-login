@@ -18,7 +18,7 @@ function setFieldData() {
 btnSave.addEventListener("click", (e) =>{
     e.preventDefault();
     if(setData()){
-        window.location = '../../pagina-inicial/pagina-inicial.html';
+        window.location = '../pagina-inicial/pagina-inicial.html';
     }
 });
 
