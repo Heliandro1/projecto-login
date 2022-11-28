@@ -33,8 +33,8 @@ function isValidPassword(password) {
 function isValidNickName(nickname) {
     let vr = '';
     if(nickname.length >= 4){
-        if (!(nickname.match(/[a-z]*/gi) == null)) {
-            nickname.match(/[a-z]*/gi).forEach(element => {
+        if (!(nickname.match(/[a-z\u00C0-\u00FF]*/gi) == null)) {
+            nickname.match(/[a-z\u00C0-\u00FF]*/gi).forEach(element => {
                 vr += element;
             });
             if (vr.length == nickname.length) {
@@ -48,8 +48,8 @@ function isValidNickName(nickname) {
 function isValidName(name) {
     let vr = '';
     if(name.length >= 4){
-        if (!(name.match(/[a-z]*/gi) == null)) {
-            name.match(/[a-z]*/gi).forEach(element => {
+        if (!(name.match(/[a-z\u00C0-\u00FF]*/gi) == null)) {
+            name.match(/[a-z\u00C0-\u00FF]*/gi).forEach(element => {
                 vr += element;
             });
             if (vr.length == name.length) {
